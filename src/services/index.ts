@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://backend.quant.dev.br',
+  baseURL: process.env.HOST_API,
   timeout: 15000
 })
 

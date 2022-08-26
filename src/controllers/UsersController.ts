@@ -1,4 +1,4 @@
-import api from 'src/services'
+import api from '../services'
 
 class UsersController {
   async auth (request, response) {

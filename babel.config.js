@@ -16,7 +16,11 @@ module.exports = {
         '@config': './src/config',
         '@models': './src/models',
         '@controllers': './src/controllers',
-        '@views': './src/views'
+        '@views': './src/views',
+        '@routes': './src/routes',
+        '@database': './src/database',
+        '@services': './src/services',
+        '@api': './src/api'
       }
     }]
   ],

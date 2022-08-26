@@ -4,7 +4,7 @@
     "module": "commonjs",                     
     "lib": ["es6"],                             
     "allowJs": true,                       
-    "outDir": "./dist",                        
+    "outDir": "./build",                        
     "rootDir": "./src",                       
     "removeComments": true,                
     "typeRoots": [
@@ -24,7 +24,9 @@
       "@views/*": ["./src/views/*"],
       "@config/*": ["./src/config/*"],
       "@routes/*": ["./src/routes/*"],
-      "@database/*": ["./src/database/*"]
+      "@database/*": ["./src/database/*"],
+      "@services/*": ["./src/services/*"],
+      "@api/*": ["./src/api/*"]
     }
   },
   "include": [
