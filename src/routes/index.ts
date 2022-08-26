@@ -4,6 +4,7 @@ import UserController from '@controllers/UsersController'
 
 const routes = Router()
 
+routes.post('/', UserController.auth)
 routes.post('/auth', UserController.auth)
 routes.get('/debtors/list', UserController.debtors)
 routes.get('/debts/list', UserController.debts)
