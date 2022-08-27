@@ -30,6 +30,22 @@ class UsersController {
     }
   }
 
+  async debtorsSearch (request, response) {
+    try {
+      const config = {
+        headers: {
+          Authorization: `Bearer ${request.headers.token}`
+        }
+      }
+
+      const { data } = await api.post('/debtors/findbykey', { key: 'nome', value: request.body.value }, config)
+
+      return response.json(data)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   async debts (request, response) {
     try {
       const config = {
