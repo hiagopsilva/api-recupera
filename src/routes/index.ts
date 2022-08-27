@@ -4,7 +4,6 @@ import UserController from '@controllers/UsersController'
 
 const routes = Router()
 
-routes.get('/', UserController.auth)
 routes.post('/auth', UserController.auth)
 routes.get('/debtors/list', UserController.debtors)
 routes.post('/debtors/search', UserController.debtorsSearch)
